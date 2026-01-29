@@ -135,6 +135,21 @@ export default async function Home() {
             <p style={{ color: '#707070' }}>No planned tasks</p>
           )}
         </div>
+
+        <div>
+          <h2 style={{ fontSize: '20px', marginBottom: '16px', color: '#f59e0b' }}>
+            🤖 Autonomous Work Queue ({tasks.autonomous?.length || 0})
+          </h2>
+          <p style={{ fontSize: '13px', color: '#a0a0a0', marginBottom: '16px', fontStyle: 'italic' }}>
+            Clarke can pick these up independently during downtime
+          </p>
+          {tasks.autonomous?.map(task => (
+            <TaskCard key={task.id} task={task} status="planned" />
+          ))}
+          {!tasks.autonomous?.length && (
+            <p style={{ color: '#707070' }}>No autonomous tasks queued</p>
+          )}
+        </div>
       </div>
     </main>
   )
