@@ -67,7 +67,7 @@ export default async function Schedules() {
     <main style={{ padding: '40px', maxWidth: '1400px', margin: '0 auto' }}>
       <div style={{ marginBottom: '40px' }}>
         <h1 style={{ fontSize: '32px', margin: '0 0 16px 0' }}>
-          👓 Recurring Tasks
+          Clarke's Dashboard 👓
         </h1>
         <div style={{ display: 'flex', gap: '16px', marginBottom: '16px' }}>
           <a href="/" style={{
